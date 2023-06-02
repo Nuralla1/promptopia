@@ -15,9 +15,10 @@ const Nav = () => {
 
   const handleFakeSignIn = async () => {
     const fakeUser = {
-      email: "lol1@gmail.com",
-      username: "fakefake1231",
+      email: "lol2@gmail.com",
+      username: "fakefake12312",
       image: "/assets/images/logo.svg",
+      id: "6479c35eab08896c7c92f550",
     };
     sessionStorage.setItem("fakeUser", JSON.stringify(fakeUser));
     setFakeUser(fakeUser);

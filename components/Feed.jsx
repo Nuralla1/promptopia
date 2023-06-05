@@ -4,7 +4,6 @@ import React, { useSate, useEffect, useState } from "react";
 import PromptCard from "./PromptCard";
 
 const PromptCardList = ({ data, handleTagClick }) => {
-  console.log(data, "da,ta");
   return (
     <div className="mt-16 prompt_layout">
       {data?.map((post) => (
@@ -43,7 +42,7 @@ const Feed = () => {
           value={searchText}
           onChange={handleSearchChange}
           required
-          className="search_input"
+          className="search_input peer"
         />
       </form>
       <PromptCardList data={posts} handleTagClick={() => {}} />

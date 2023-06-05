@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 import Link from "next/link";
 import Image from "next/image";
-import { connectToDB } from "@utils/database";
-import User from "@models/user";
 
 const Nav = () => {
   const { data: session } = useSession();
